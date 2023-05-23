@@ -20,7 +20,7 @@ interface User {
 
 const App: React.FC = () => {
   const [repositories, setRepositories] = useState<Repository[]>([]);
-  const [user, setUser] = useState<User | null>(null);
+  const [user, setUser] = useState<User>({ name: 'Silvia Garcia', bio: 'This is a small coding test from Ballys' });
 
   const fetchRepositories = async (searchQuery: string = ''): Promise<void> => {
     try {
