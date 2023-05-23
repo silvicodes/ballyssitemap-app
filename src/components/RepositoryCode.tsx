@@ -10,7 +10,7 @@ const RepositoryCode: React.FC = () => {
     try {
       const response = await axios.get(`https://api.github.com/repos/${repositoryName}/contents`, {
         headers: {
-          Authorization: `Bearer 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`, // Replace with your GitHub personal access token
+          Authorization: `Bearer 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`,
         },
       });
 
